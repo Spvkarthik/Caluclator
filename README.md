@@ -28,13 +28,3 @@ Calculator-Project/
 │-- index.html
 │-- script.js
 │-- README.md
-```
-
-## Deployment
-To deploy this project:
-1. Upload the files to GitHub.
-2. Use Netlify to deploy the site by linking it to the GitHub repository.
-
-## License
-This project is open-source and available for personal and educational use.
-
