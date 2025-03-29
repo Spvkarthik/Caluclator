@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h2>Caluclator</h2>
+    <div class="calculator text-center">
+        <input type="text" class="form-control display" id="display" disabled>
+        <div class="mt-2 row">
+            <button class="btn btn-danger" onclick="clearDisplay()">AC</button>
+            <button class="btn btn-secondary" onclick="appendValue('%')">%</button>
+            <button class="btn btn-secondary" onclick="squareNumber()">x²</button>
+            <button class="btn btn-warning" onclick="appendValue('/')">/</button>
+        </div>
+        <div class="mt-2 row">
+            <button class="btn btn-light" onclick="appendValue('7')">7</button>
+            <button class="btn btn-light" onclick="appendValue('8')">8</button>
+            <button class="btn btn-light" onclick="appendValue('9')">9</button>
+            <button class="btn btn-warning" onclick="appendValue('*')">*</button>
+        </div>
+        <div class="mt-2 row">
+            <button class="btn btn-light" onclick="appendValue('4')">4</button>
+            <button class="btn btn-light" onclick="appendValue('5')">5</button>
+            <button class="btn btn-light" onclick="appendValue('6')">6</button>
+            <button class="btn btn-warning" onclick="appendValue('-')">-</button>
+        </div>
+        <div class="mt-2 row">
+            <button class="btn btn-light" onclick="appendValue('1')">1</button>
+            <button class="btn btn-light" onclick="appendValue('2')">2</button>
+            <button class="btn btn-light" onclick="appendValue('3')">3</button>
+            <button class="btn btn-warning" onclick="appendValue('+')">+</button>
+        </div>
+        <div class="mt-2 row">
+            <button class="btn btn-info" onclick="toggleTrigButtons()">Trig</button>
+            <button class="btn btn-light" onclick="appendValue('0')">0</button>
+            <button class="btn btn-light" onclick="appendValue('.')">.</button>
+            <button class="btn btn-success" onclick="calculate()">=</button>
+        </div>
+        <div class="mt-2 row trig-buttons" id="trig-buttons">
+            <div>
+            <button class="btn btn-info" onclick="calculateTrig('sin')">sin</button>
+            <button class="btn btn-info" onclick="calculateTrig('cos')">cos</button>
+            <button class="btn btn-info" onclick="calculateTrig('tan')">tan</button>
+        </div>
+        <div>
+            <button class="btn btn-info" onclick="calculateTrig('asin')">sin⁻¹</button>
+            <button class="btn btn-info" onclick="calculateTrig('acos')">cos⁻¹</button>
+            <button class="btn btn-info" onclick="calculateTrig('atan')">tan⁻¹</button>
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
