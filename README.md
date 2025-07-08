@@ -15,3 +15,6 @@ A simple calculator built using HTML, CSS (Bootstrap), and JavaScript. This calc
 - HTML
 - CSS (Bootstrap)
 - JavaScript
+
+## 🔗 Live Demo
+- 🌐 [Calculator](calculatingmath.netlify.app)
